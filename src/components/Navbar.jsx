@@ -3,9 +3,12 @@ import React, { useEffect, useState } from "react";
 import { styles } from "../styles/styles";
 import { navLinks } from "../constants";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 import close from "../assets/svg/close.svg";
 import menu from "../assets/svg/menu.svg";
+import linken from "../assets/img/linken.png";
+import github from "../assets/img/github.png";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -48,26 +51,58 @@ const Navbar = () => {
           <img
             src="https://res.cloudinary.com/dtbfspso5/image/upload/v1730777526/logo_a58npi.png"
             alt="logo"
-            className="w-9 h-9 object-contain"
+            className="w-20 h-20 object-contain bg-gray-500 rounded-full p-2"
           />
           <p className="text-white text-[18px] font-bold cursor-pointer flex ">
             Mago
-            <span className="sm:block hidden"> | React</span>
           </p>
         </Link>
 
-        <ul className="list-none hidden sm:flex flex-row gap-10">
+        <ul className="list-none hidden sm:flex flex-row items-center gap-10">
           {navLinks.map((nav) => (
             <li
               key={nav.id}
               className={`${
                 active === nav.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+              } hover:text-blue-400 text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
+          <div className="flex gap-2">
+            <div className="social-icon">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.linkedin.com/in/martin-gramajo/"
+              >
+                <img src={linken} alt="LinkedIn Icon" />
+              </a>
+            </div>
+            <div className="social-icon">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/MartinGramajo"
+              >
+                <img src={github} alt="GitHub Icon" />
+              </a>
+            </div>
+            <div className="navbar-text ml-5">
+              <HashLink
+                className="text-decoration-none"
+                to={"/MartinGramajoDevFrontendCV.pdf"}
+                download
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button>
+                  <h6 className="mb-0">CV</h6>
+                </button>
+              </HashLink>
+            </div>
+          </div>
         </ul>
 
         <div className="sm:hidden flex flex-1 justify-end items-center">
@@ -98,6 +133,39 @@ const Navbar = () => {
                   <a href={`#${nav.id}`}>{nav.title}</a>
                 </li>
               ))}
+                <div className="flex gap-2">
+            <div className="social-icon">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.linkedin.com/in/martin-gramajo/"
+              >
+                <img src={linken} alt="LinkedIn Icon" />
+              </a>
+            </div>
+            <div className="social-icon">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/MartinGramajo"
+              >
+                <img src={github} alt="GitHub Icon" />
+              </a>
+            </div>
+            <div className="navbar-text ml-5">
+              <HashLink
+                className="text-decoration-none"
+                to={"/MartinGramajoDevFrontendCV.pdf"}
+                download
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button>
+                  <h6 className="mb-0">CV</h6>
+                </button>
+              </HashLink>
+            </div>
+          </div>
             </ul>
           </div>
         </div>
