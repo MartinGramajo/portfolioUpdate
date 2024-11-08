@@ -1,15 +1,13 @@
 
-import "./App.css";
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
 
 function App() {
-
   return (
     <>
-      <div className="text-center  text-green-800  ">
-        <h1 className="">
-        ¡Hola, Tailwind en React!
-
-        </h1>
+      <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+        <Navbar />
+        <Hero />
       </div>
     </>
   );
