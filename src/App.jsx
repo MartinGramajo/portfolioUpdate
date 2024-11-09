@@ -2,6 +2,7 @@ import { BrowserRouter } from "react-router-dom";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Works from "./components/Works";
+import Skills from "./components/Skills";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
           <Navbar />
           <Hero />
         </div>
+        <Skills/>
         <Works />
       </div>
     </BrowserRouter>
