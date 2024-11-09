@@ -40,3 +40,8 @@
 .read-the-docs {
   color: #888;
 }
+
+.bg-tertiary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(21 16 48 / var(--tw-bg-opacity)) /* #151030 */;
+}
