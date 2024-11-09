@@ -12,8 +12,12 @@ function App() {
           <Navbar />
           <Hero />
         </div>
-        <Skills/>
+    
+
+    
+        {/* <Skills/> */}
         <Works />
+        
       </div>
     </BrowserRouter>
   );

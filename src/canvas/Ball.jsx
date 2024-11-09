@@ -8,7 +8,7 @@ import {
   useTexture,
 } from "@react-three/drei";
 
-import CanvasLoader from "../canvas/Loader";
+import CanvasLoader from "../components/Loader";
 
 const Ball = (props) => {
   const [decal] = useTexture([props.imgUrl]);

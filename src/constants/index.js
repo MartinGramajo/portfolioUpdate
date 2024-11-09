@@ -421,5 +421,13 @@ export const technologies = [
       name: "docker",
       icon: docker,
     },
+    {
+      name: "progress",
+      icon: progress,
+    },
+    {
+      name: "tableplus",
+      icon: tablePlus,
+    },
   ];
 
