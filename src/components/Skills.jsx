@@ -1,11 +1,18 @@
-import React from 'react'
+import React from "react";
+import { motion } from "framer-motion";
+import { styles } from "../styles/styles";
+import { textVariant } from "../utils/motion";
+import { SectionWrapper } from "../hoc";
 
 const Skills = () => {
   return (
-    <div>
-      <span>skills</span>
-    </div>
-  )
-}
+    <>
+      <motion.div variants={textVariant()}>
+        <p className={`${styles.sectionSubText} `}>Mis Skills</p>
+        <h2 className={`${styles.sectionHeadText}`}>Tecnologías</h2>
+      </motion.div>
+    </>
+  );
+};
 
-export default Skills
+export default SectionWrapper(Skills, "");
