@@ -19,13 +19,13 @@ function App() {
 
         <About />
         <Skills />
-
-        <div className="relative z-0">
           <Works />
           <Native />
+
+        <div className="relative z-0">
           <StarsCanvas />
-        </div>
         <Footer />
+        </div>
       </div>
     </BrowserRouter>
   );
