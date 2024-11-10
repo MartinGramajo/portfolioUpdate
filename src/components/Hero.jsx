@@ -3,9 +3,16 @@ import { styles } from "../styles/styles";
 import useText from "../hook/useText";
 import ComputersCanvas from "../canvas/Computers";
 import AnimatedComponent from "./AnimatedComponent";
+import { useEffect } from "react";
 
 const Hero = () => {
   const { text } = useText();
+
+  useEffect(() => {
+    // Lógica para inicializar el canvas solo cuando se haya montado el componente
+    console.log('ComputersCanvas Loaded');
+    // Aquí va la lógica para crear el canvas, si no existe ya
+  }, []);
 
   return (
     <section className={`relative w-full h-screen mx-auto mb-10`}>
@@ -26,13 +33,13 @@ const Hero = () => {
             Me llamo Martin Gramajo pero todos me dicen <b>Mago</b>.{" "}
             <br className="sm:block hidden" />
             Desarrollador
-            <b> React, React-native y Next.js </b>
+            <b> React, React-native y Next.js </b> 
           </p>
         </div>
       </div>
-      <div className="absolute inset-0 top-0">
+    
         <ComputersCanvas />
-      </div>
+
       <AnimatedComponent />
     </section>
   );

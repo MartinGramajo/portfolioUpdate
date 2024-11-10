@@ -3,6 +3,17 @@
 @tailwind components;
 @tailwind utilities;
 
+#computers-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#ball-canvas {
+  position: absolute;
+  top: 300px; /* Ajusta la posición según lo necesites */
+  left: 0;
+}
 
 * {
   margin: 0;
