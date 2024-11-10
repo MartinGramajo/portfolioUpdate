@@ -22,15 +22,15 @@ import backend from '../assets/icons/backend.png';
 
 export const navLinks = [
   {
-    id: "inicio",
-    title: "Inicio",
+    id: "about",
+    title: "Sobre mi",
   },
   {
     id: "skills",
     title: "Skills",
   },
   {
-    id: "proyectos",
+    id: "works",
     title: "Proyectos",
   },
 ];

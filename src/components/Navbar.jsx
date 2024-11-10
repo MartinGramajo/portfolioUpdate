@@ -15,21 +15,21 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  // TODO : AGREGAR LA FUNCIONALIDAD
-  //   useEffect(() => {
-  //     const handleScroll = () => {
-  //       const scrollTop = window.scrollY;
-  //       if (scrollTop > 100) {
-  //         setScrolled(true);
-  //       } else {
-  //         setScrolled(false);
-  //       }
-  //     };
 
-  //     window.addEventListener("scroll", handleScroll);
+    useEffect(() => {
+      const handleScroll = () => {
+        const scrollTop = window.scrollY;
+        if (scrollTop > 100) {
+          setScrolled(true);
+        } else {
+          setScrolled(false);
+        }
+      };
 
-  //     return () => window.removeEventListener("scroll", handleScroll);
-  //   }, []);
+      window.addEventListener("scroll", handleScroll);
+
+      return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
 
   return (
     <nav
