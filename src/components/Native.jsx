@@ -54,7 +54,7 @@ const ExperienceCard = ({ experience }) => {
       <div className="video-container mt-4">
         <iframe
           width="100%"
-          height="600"
+          height="400"
           src={experience.videoUrl}
           title="YouTube video player"
           frameBorder="0"
@@ -74,7 +74,7 @@ const Native = () => {
           Mobile app
         </p>
         <h2 className={`${styles.sectionHeadText} text-center`}>
-          Proyectos en React Native.
+          React Native.
         </h2>
       </motion.div>
 

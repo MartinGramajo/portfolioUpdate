@@ -5,6 +5,8 @@ import Works from "./components/Works";
 import Skills from "./components/Skills";
 import About from "./components/About";
 import Native from "./components/Native";
+import Footer from "./components/Footer";
+import StarsCanvas from "./canvas/Stars";
 
 function App() {
   return (
@@ -14,13 +16,16 @@ function App() {
           <Navbar />
           <Hero />
         </div>
-    
 
         <About />
-        <Skills/>
-        <Works />
-        <Native />
-        
+        <Skills />
+
+        <div className="relative z-0">
+          <Works />
+          <Native />
+          <StarsCanvas />
+        </div>
+        <Footer />
       </div>
     </BrowserRouter>
   );
