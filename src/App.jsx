@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Works from "./components/Works";
 import Skills from "./components/Skills";
 import About from "./components/About";
+import Native from "./components/Native";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <About />
         <Skills/>
         <Works />
+        <Native />
         
       </div>
     </BrowserRouter>
