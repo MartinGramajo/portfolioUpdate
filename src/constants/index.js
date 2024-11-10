@@ -15,6 +15,11 @@ import docker  from "../assets/icons/docker.png";
 import progress from "../assets/icons/progresql.png";
 import tablePlus from "../assets/icons/tableplus.png";
 
+import web from "../assets/icons/web.png";
+import reactWeb from '../assets/icons/mobile.png'
+import nextjs from "../assets/icons/nextjs.png";
+import backend from '../assets/icons/backend.png';
+
 export const navLinks = [
   {
     id: "inicio",
@@ -431,3 +436,23 @@ export const technologies = [
     },
   ];
 
+
+  export const services = [
+    {
+      title: "Web Developer",
+      icon: web,
+    },
+    {
+      title: "React & React Native Developer",
+      icon: reactWeb,
+    },
+    {
+      title: "Next Developer",
+      icon: nextjs,
+    },
+    {
+      title: "Backend Developer",
+      icon: backend,
+    },
+  ];
+  
