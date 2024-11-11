@@ -11,7 +11,7 @@ export default function Footer() {
           <img
             src="https://res.cloudinary.com/dtbfspso5/image/upload/v1730777526/logo_a58npi.png"
             alt="logo"
-            className="object-contain bg-[#915EFF] rounded-full p-2 w-24"
+             className="object-contain bg-[#915EFF] rounded-full p-2 w-24 mx-auto sm:mx-0"
           />
           </div>
           <div className="w-full sm:w-1/3 text-center mb-6 sm:mb-0">

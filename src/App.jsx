@@ -22,9 +22,9 @@ function App() {
         <Works />
         <Native />
 
-        <div >
-     
+        <div className="relative z-0">
           <Footer />
+          <StarsCanvas />
         </div>
       </div>
     </BrowserRouter>
