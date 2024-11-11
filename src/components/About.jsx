@@ -57,15 +57,6 @@ const About = () => {
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
-      <div className="mt-8 flex justify-center">
-        
-      <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl "
-      >
-        "Trabajemos juntos y creemos algo único"
-      </motion.p>
-      </div>
     </>
   );
 };

@@ -70,7 +70,7 @@ const ProjectCard = ({
 const Works = () => {
   return (
     <>
-      <motion.div >
+      <motion.div  variants={textVariant()} >
         <p className={`${styles.sectionSubText} `}>Mi trabajo</p>
         <h2 className={`${styles.sectionHeadText}`}>Proyectos.</h2>
       </motion.div>
@@ -80,11 +80,7 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          Los siguientes proyectos muestran mis habilidades y experiencia a
-          través de ejemplos reales de mi trabajo. Cada proyecto se describe
-          brevemente con con enlaces a su dominio. Refleja mi capacidad para
-          resolver problemas complejos, trabajar con diferentes tecnologías y
-          gestionar proyectos con eficacia.
+             "Trabajemos juntos y creemos algo único"
         </motion.p>
       </div>
 
