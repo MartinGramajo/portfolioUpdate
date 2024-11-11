@@ -24,7 +24,9 @@ function App() {
 
         <div className="relative z-0">
           <Footer />
-          <StarsCanvas />
+          <div className="hidden lg:block">
+            <StarsCanvas />
+          </div>
         </div>
       </div>
     </BrowserRouter>

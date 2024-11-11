@@ -8,11 +8,6 @@ import { useEffect } from "react";
 const Hero = () => {
   const { text } = useText();
 
-  useEffect(() => {
-    // Lógica para inicializar el canvas solo cuando se haya montado el componente
-    console.log('ComputersCanvas Loaded');
-    // Aquí va la lógica para crear el canvas, si no existe ya
-  }, []);
 
   return (
     <section className={`relative w-full h-screen mx-auto mb-10`}>
@@ -25,7 +20,7 @@ const Hero = () => {
         </div>
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            <span className="mr-4">Hola soy Mago</span>{" "}
+            <span className="mr-1">Hola soy Mago</span>{" "}
             <span className="text-[#915EFF]">{text}</span>
           </h1>
 
