@@ -22,8 +22,8 @@ function App() {
         <Works />
         <Native />
 
-        <div className="relative z-0">
-          <StarsCanvas />
+        <div >
+     
           <Footer />
         </div>
       </div>
