@@ -19,12 +19,12 @@ function App() {
 
         <About />
         <Skills />
-          <Works />
-          <Native />
+        <Works />
+        <Native />
 
         <div className="relative z-0">
           <StarsCanvas />
-        <Footer />
+          <Footer />
         </div>
       </div>
     </BrowserRouter>
