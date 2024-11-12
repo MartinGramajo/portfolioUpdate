@@ -111,16 +111,16 @@ const ProjectCard = ({
 const Works = () => {
   return (
     <>
-      <motion.div variants={textVariant()} className="hidden sm:block">
+      <motion.div variants={textVariant()} className="hidden xl:block">
         <p className={`${styles.sectionSubText}`}>Mi trabajo</p>
         <h2 className={`${styles.sectionHeadText}`}>Proyectos.</h2>
       </motion.div>
-      <motion.div  className="block sm:hidden">
+      <motion.div  className="block xl:hidden">
         <p className={`${styles.sectionSubText} `}>Mi trabajo</p>
         <h2 className={`${styles.sectionHeadText}`}>Proyectos.</h2>
       </motion.div>
 
-      <div className="w-full flex hidden sm:block">
+      <div className="w-full flex hidden xl:block">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
@@ -128,7 +128,7 @@ const Works = () => {
           "Trabajemos juntos y creemos algo único"
         </motion.p>
       </div>
-      <div className="w-full flex block sm:hidden">
+      <div className="w-full flex block xl:hidden">
         <motion.p
          
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
