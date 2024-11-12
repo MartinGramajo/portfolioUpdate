@@ -21,7 +21,7 @@ const ProjectCard = ({
       {/* Animación solo en pantallas grandes */}
       <motion.div
         variants={fadeIn("up", "spring", index * 0.5, 0.75)}
-        className="hidden md:block"
+        className="hidden xl:block"
       >
         <Tilt
           options={{
@@ -29,7 +29,7 @@ const ProjectCard = ({
             scale: 1,
             speed: 450,
           }}
-          className="bg-tertiary p-4 rounded-2xl w-full sm:w-[350px] h-[480px]"
+          className="bg-tertiary p-4 rounded-2xl w-[350px] h-[480px]"
         >
           <div className="relative w-full h-[230px]">
             <img
@@ -68,7 +68,7 @@ const ProjectCard = ({
       </motion.div>
 
       {/* Sin animación en dispositivos móviles */}
-      <div className="md:hidden bg-tertiary p-4 rounded-2xl w-full h-[480px]">
+      <div className="xl:hidden bg-tertiary p-4 rounded-2xl w-[350px] h-[480px]">
         <div className="relative w-full h-[230px]">
           <img
             src={image}
@@ -107,6 +107,7 @@ const ProjectCard = ({
   );
 };
 
+
 const Works = () => {
   return (
     <>
@@ -114,8 +115,8 @@ const Works = () => {
         <p className={`${styles.sectionSubText}`}>Mi trabajo</p>
         <h2 className={`${styles.sectionHeadText}`}>Proyectos.</h2>
       </motion.div>
-      <motion.div className="block sm:hidden">
-        <p className={`${styles.sectionSubText}`}>Mi trabajo</p>
+      <motion.div  className="block sm:hidden">
+        <p className={`${styles.sectionSubText} `}>Mi trabajo</p>
         <h2 className={`${styles.sectionHeadText}`}>Proyectos.</h2>
       </motion.div>
 
@@ -128,7 +129,10 @@ const Works = () => {
         </motion.p>
       </div>
       <div className="w-full flex block sm:hidden">
-        <motion.p className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]">
+        <motion.p
+         
+          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        >
           "Trabajemos juntos y creemos algo único"
         </motion.p>
       </div>
