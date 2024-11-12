@@ -68,8 +68,8 @@ const ProjectCard = ({
       </motion.div>
 
       {/* Sin animación en dispositivos móviles */}
-      <div className="xl:hidden bg-tertiary p-4 rounded-2xl w-[350px] h-[480px]">
-        <div className="relative w-full h-[230px]">
+      <div className="xl:hidden bg-tertiary p-4 rounded-2xl w-[full] h-[480px]">
+        <div className="relative w-full h-[250px] ">
           <img
             src={image}
             alt="project_image"
