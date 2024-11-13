@@ -107,6 +107,28 @@ export const projects = [
     source_code_link: "https://www.dkzstudio.com/",
   },
   {
+    name: "Abancos",
+    description:
+      "App web para una empresa líder en España, enfocada en soluciones financieras para ventas, inversiones y financiamiento inmobiliario.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Node.js",
+        color: "pink-text-gradient",
+      },
+    ],
+    image:
+      "https://res.cloudinary.com/dtbfspso5/image/upload/v1731462688/portfolio%20update%20final/Captura_de_pantalla_2024-11-12_225030_ex1smk.png",
+    source_code_link: "https://abancos.com/",
+  },
+  {
     name: "Hotel Tafí",
     description:
       "App web: cuenta con un widget que permite una experiencia de reserva fluida para huéspedes y facilita a los propietarios gestionar reservas y maximizar ocupación.",
