@@ -19,8 +19,8 @@ const ProjectCard = ({
   return (
     <>
       {/* Animación solo en pantallas grandes */}
-      <motion.div
-        variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+      <div
+      
         className="hidden xl:block"
       >
         <Tilt
@@ -65,7 +65,7 @@ const ProjectCard = ({
             ))}
           </div>
         </Tilt>
-      </motion.div>
+      </div>
 
       {/* Sin animación en dispositivos móviles */}
       <div className="xl:hidden bg-tertiary p-4 rounded-2xl w-[full] h-[480px]">
