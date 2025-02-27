@@ -41,6 +41,28 @@ export const navLinks = [
 
 export const projects = [
   {
+    name: "Porfolio Dev Backend",
+    description:
+      "Landing Portfolio: Landing moderna y personalizada que destaca habilidades y proyectos de forma visual y profesional, ideal para captar atención en el ámbito freelance.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image:
+      "https://res.cloudinary.com/dtbfspso5/image/upload/v1740670306/portfolio%20update%20final/jmhnl3iezrubobpxms3m.png",
+    source_code_link: "https://mauro-trejo.vercel.app/",
+  },
+  {
     name: "Zoco servicio de pago",
     description:
       "App Web: Un panel intuitivo que ofrece a clientes acceso a sus datos de facturación y permite a asesores comerciales gestionar y potenciar sus ventas.",
