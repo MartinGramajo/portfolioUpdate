@@ -46,7 +46,7 @@ export const projects = [
       "Aplicación web diseñada para recopilar retroalimentación estructurada de paciente de la clinica CEO, con un enfoque moderno y profesional. ",
     tags: [
       {
-        name: "Next",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
