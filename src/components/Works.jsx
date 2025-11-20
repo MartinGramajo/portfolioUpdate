@@ -18,76 +18,75 @@ const ProjectCard = ({
 }) => {
   return (
     <>
-      {/* Animación solo en pantallas grandes */}
-      <div
-      
-        className="hidden xl:block"
-      >
-        <Tilt
-          options={{
-            max: 45,
-            scale: 1,
-            speed: 450,
+      {/* DESKTOP */}
+      <div className="hidden xl:block">
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 0.5,
+            delay: index * 0.2,
+            type: "spring",
           }}
-          className="bg-tertiary p-4 rounded-2xl w-[350px] h-[480px]"
         >
-          <div className="relative w-full h-[230px]">
-            <img
-              src={image}
-              alt="project_image"
-              className="w-full h-full object-cover rounded-2xl"
-            />
-
-            <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-              <div
-                onClick={() => window.open(source_code_link, "_blank")}
-                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-              >
+          <div
+            onClick={() => window.open(source_code_link, "_blank")}
+            className="cursor-pointer"
+          >
+            <Tilt
+              options={{
+                max: 45,
+                scale: 1,
+                speed: 450,
+              }}
+              className="bg-tertiary p-4 rounded-2xl w-[350px] h-[480px]"
+            >
+              <div className="relative w-full h-[230px]">
                 <img
-                  src={web}
-                  alt="source code"
-                  className="w-1/2 h-1/2 object-contain"
+                  src={image}
+                  alt="project_image"
+                  className="w-full h-full object-cover rounded-2xl"
                 />
               </div>
-            </div>
-          </div>
 
-          <div className="mt-5">
-            <h3 className="text-white font-bold text-[18px]">{name}</h3>
-            <p className="mt-2 text-secondary text-[14px]">{description}</p>
-          </div>
+              <div className="mt-5">
+                <h3 className="text-white font-bold text-[18px]">{name}</h3>
+                <p className="mt-2 text-secondary text-[14px]">{description}</p>
+              </div>
 
-          <div className="mt-4 flex flex-wrap gap-2">
-            {tags.map((tag) => (
-              <p key={`${name}-${tag.name}`} className={`text-[14px] ${tag.color}`}>
-                #{tag.name}
-              </p>
-            ))}
+              <div className="mt-4 flex flex-wrap gap-2">
+                {tags.map((tag) => (
+                  <p
+                    key={`${name}-${tag.name}`}
+                    className={`text-[14px] ${tag.color}`}
+                  >
+                    #{tag.name}
+                  </p>
+                ))}
+              </div>
+            </Tilt>
           </div>
-        </Tilt>
+        </motion.div>
       </div>
 
-      {/* Sin animación en dispositivos móviles */}
-      <div className="xl:hidden bg-tertiary p-4 rounded-2xl w-[full] h-[480px]">
-        <div className="relative w-full h-[250px] ">
+      {/* MOBILE */}
+      <motion.div
+        className="xl:hidden bg-tertiary p-4 rounded-2xl w-full h-[480px] cursor-pointer"
+        onClick={() => window.open(source_code_link, "_blank")}
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 0.5,
+          delay: index * 0.2,
+          type: "spring",
+        }}
+      >
+        <div className="relative w-full h-[250px]">
           <img
             src={image}
             alt="project_image"
             className="w-full h-full object-cover rounded-2xl"
           />
-
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-            >
-              <img
-                src={web}
-                alt="source code"
-                className="w-1/2 h-1/2 object-contain"
-              />
-            </div>
-          </div>
         </div>
 
         <div className="mt-5">
@@ -97,12 +96,15 @@ const ProjectCard = ({
 
         <div className="mt-4 flex flex-wrap gap-2">
           {tags.map((tag) => (
-            <p key={`${name}-${tag.name}`} className={`text-[14px] ${tag.color}`}>
+            <p
+              key={`${name}-${tag.name}`}
+              className={`text-[14px] ${tag.color}`}
+            >
               #{tag.name}
             </p>
           ))}
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };

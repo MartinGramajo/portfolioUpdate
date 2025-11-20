@@ -41,6 +41,28 @@ export const navLinks = [
 
 export const projects = [
   {
+    name: "Feedback CEO ",
+    description:
+      "Aplicación web diseñada para recopilar retroalimentación estructurada de paciente de la clinica CEO, con un enfoque moderno y profesional. ",
+    tags: [
+      {
+        name: "Next",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Typescript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image:
+      "https://res.cloudinary.com/dtbfspso5/image/upload/v1763600715/feedback_bt4ojo.png",
+    source_code_link: "https://mauro-trejo.vercel.app/",
+  },
+  {
     name: "Porfolio Dev Backend",
     description:
       "Landing Portfolio: Landing moderna y personalizada que destaca habilidades y proyectos de forma visual y profesional, ideal para captar atención en el ámbito freelance.",
@@ -103,7 +125,7 @@ export const projects = [
       },
     ],
     image:
-      "https://res.cloudinary.com/dtbfspso5/image/upload/v1731176193/portfolio%20update%20final/somoswe_cthece.png",
+      "https://res.cloudinary.com/dtbfspso5/image/upload/v1763600519/wereal_rupdqo.png",
     source_code_link: "https://wereal.es/",
   },
   {
@@ -147,7 +169,7 @@ export const projects = [
       },
     ],
     image:
-      "https://res.cloudinary.com/dtbfspso5/image/upload/v1731462688/portfolio%20update%20final/Captura_de_pantalla_2024-11-12_225030_ex1smk.png",
+      "https://res.cloudinary.com/dtbfspso5/image/upload/v1763600444/abanco_lupkhi.png",
     source_code_link: "https://abancos.com/",
   },
   {
@@ -169,7 +191,7 @@ export const projects = [
       },
     ],
     image:
-      "https://res.cloudinary.com/dtbfspso5/image/upload/v1731176186/portfolio%20update%20final/hoteltafi_wlndqg.png",
+      "https://res.cloudinary.com/dtbfspso5/image/upload/v1763600366/hotel_xfwk8t.png",
     source_code_link: "https://hoteltafi.com/",
   },
   {
@@ -283,50 +305,7 @@ export const projects = [
       "https://res.cloudinary.com/dtbfspso5/image/upload/v1731179084/portfolio%20update%20final/paztour_q81iwm.png",
     source_code_link: "https://paztouragency.es/",
   },
-  {
-    name: "Enacoin",
-    description:
-      "Landing Page: que aborda educación financiera, emocional y criptomonedas, ofreciendo recursos y herramientas interactivas para enriquecer la comprensión de estos temas.",
-    tags: [
-      {
-        name: "React",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Bootstrap",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Widget",
-        color: "pink-text-gradient",
-      },
-    ],
-    image:
-      "https://res.cloudinary.com/dtbfspso5/image/upload/v1731179267/portfolio%20update%20final/ena_ycoxto.png",
-    source_code_link: "https://enacoin.net//",
-  },
-  {
-    name: "Sebastian Spinelli",
-    description:
-      "Landing Portfolio: Landing moderna y personalizada que destaca habilidades y proyectos de forma visual y profesional, ideal para captar atención en el ámbito freelance.",
-    tags: [
-      {
-        name: "React",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Bootstrap",
-        color: "green-text-gradient",
-      },
-      {
-        name: "javascript",
-        color: "pink-text-gradient",
-      },
-    ],
-    image:
-      "https://res.cloudinary.com/dtbfspso5/image/upload/v1731176175/portfolio%20update%20final/sebas_piis3v.png",
-    source_code_link: "https://sebaspinelli.com/",
-  },
+
   {
     name: "M4Life ",
     description:
