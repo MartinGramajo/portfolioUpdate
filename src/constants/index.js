@@ -172,50 +172,7 @@ export const projects = [
       "https://res.cloudinary.com/dtbfspso5/image/upload/v1763600444/abanco_lupkhi.png",
     source_code_link: "https://abancos.com/",
   },
-  {
-    name: "Hotel Tafí",
-    description:
-      "App web: cuenta con un widget que permite una experiencia de reserva fluida para huéspedes y facilita a los propietarios gestionar reservas y maximizar ocupación.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "widget",
-        color: "green-text-gradient",
-      },
-      {
-        name: "bootstrap",
-        color: "pink-text-gradient",
-      },
-    ],
-    image:
-      "https://res.cloudinary.com/dtbfspso5/image/upload/v1763600366/hotel_xfwk8t.png",
-    source_code_link: "https://hoteltafi.com/",
-  },
-  {
-    name: "German Schilman ",
-    description:
-      "App Web: inmobiliaria que facilita la exploración de propiedades para compra o alquiler, con detalles completos, imágenes y contacto para cada inmueble.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "bootstrap",
-        color: "pink-text-gradient",
-      },
-    ],
-    image:
-      "https://res.cloudinary.com/dtbfspso5/image/upload/v1731176192/portfolio%20update%20final/gs_x977aa.png",
-    source_code_link: "http://www.germanschilman.com/",
-  },
+
   {
     name: "Polo Salud",
     description:
@@ -238,28 +195,7 @@ export const projects = [
       "https://res.cloudinary.com/dtbfspso5/image/upload/v1731178271/portfolio%20update%20final/Captura_de_pantalla_2024-11-09_155057_dqmk0o.png",
     source_code_link: "https://www.polo-salud.com/es/",
   },
-  {
-    name: "La Estancia Gastrohome",
-    description:
-      "App Web: permite realizar pedidos a domicilio o reservar mesa en establecimientos, mejorando la satisfacción del cliente y la eficiencia para los propietarios.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "css",
-        color: "green-text-gradient",
-      },
-      {
-        name: "bootstrap",
-        color: "pink-text-gradient",
-      },
-    ],
-    image:
-      "https://res.cloudinary.com/dtbfspso5/image/upload/v1731177982/portfolio%20update%20final/laestancia_hoe4qk.png",
-    source_code_link: "https://laestanciagastrohome.es/",
-  },
+
 
   {
     name: "Grillman 100% carne al fuego",
