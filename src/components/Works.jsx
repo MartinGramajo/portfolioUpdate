@@ -1,12 +1,12 @@
-import React from "react";
+
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles/styles";
-import web from "../assets/img/iconoWeb.png";
+
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
-import { fadeIn, textVariant } from "../utils/motion";
+
 
 const ProjectCard = ({
   index,
@@ -15,11 +15,12 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  isLarge,
 }) => {
   return (
     <>
       {/* DESKTOP */}
-      <div className="hidden xl:block">
+      <div className="hidden xl:block w-full">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -39,9 +40,17 @@ const ProjectCard = ({
                 scale: 1,
                 speed: 450,
               }}
-              className="bg-tertiary p-4 rounded-2xl w-[350px] h-[480px]"
+              className={`bg-tertiary p-4 rounded-2xl ${
+                isLarge
+                  ? "w-full h-[600px]"
+                  : "w-[350px] h-[480px]"
+              }`}
             >
-              <div className="relative w-full h-[230px]">
+              <div
+                className={`relative w-full ${
+                  isLarge ? "h-[350px]" : "h-[230px]"
+                }`}
+              >
                 <img
                   src={image}
                   alt="project_image"
@@ -50,8 +59,20 @@ const ProjectCard = ({
               </div>
 
               <div className="mt-5">
-                <h3 className="text-white font-bold text-[18px]">{name}</h3>
-                <p className="mt-2 text-secondary text-[14px]">{description}</p>
+                <h3
+                  className={`text-white font-bold ${
+                    isLarge ? "text-[24px]" : "text-[18px]"
+                  }`}
+                >
+                  {name}
+                </h3>
+                <p
+                  className={`mt-2 text-secondary ${
+                    isLarge ? "text-[16px]" : "text-[12px]"
+                  }`}
+                >
+                  {description}
+                </p>
               </div>
 
               <div className="mt-4 flex flex-wrap gap-2">
@@ -71,7 +92,9 @@ const ProjectCard = ({
 
       {/* MOBILE */}
       <motion.div
-        className="xl:hidden bg-tertiary p-4 rounded-2xl w-full h-[480px] cursor-pointer"
+        className={`xl:hidden bg-tertiary p-4 rounded-2xl w-full cursor-pointer ${
+          isLarge ? "h-[550px]" : "h-[480px]"
+        }`}
         onClick={() => window.open(source_code_link, "_blank")}
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -81,7 +104,11 @@ const ProjectCard = ({
           type: "spring",
         }}
       >
-        <div className="relative w-full h-[250px]">
+        <div
+          className={`relative w-full ${
+            isLarge ? "h-[300px]" : "h-[250px]"
+          }`}
+        >
           <img
             src={image}
             alt="project_image"
@@ -90,8 +117,20 @@ const ProjectCard = ({
         </div>
 
         <div className="mt-5">
-          <h3 className="text-white font-bold text-[18px]">{name}</h3>
-          <p className="mt-2 text-secondary text-[14px]">{description}</p>
+          <h3
+            className={`text-white font-bold ${
+              isLarge ? "text-[22px]" : "text-[18px]"
+            }`}
+          >
+            {name}
+          </h3>
+          <p
+            className={`mt-2 text-secondary ${
+              isLarge ? "text-[12px]" : "text-[10px]"
+            }`}
+          >
+            {description}
+          </p>
         </div>
 
         <div className="mt-4 flex flex-wrap gap-2">
@@ -111,41 +150,45 @@ const ProjectCard = ({
 
 
 const Works = () => {
+  const firstProject = projects[0];
+  const otherProjects = projects.slice(1);
+
   return (
     <>
-      <div className="hidden xl:block">
+      {/* TITULOS */}
+      <div>
         <p className={`${styles.sectionSubText}`}>Mi trabajo</p>
         <h2 className={`${styles.sectionHeadText}`}>Proyectos.</h2>
       </div>
-      <div  className="block xl:hidden">
-        <p className={`${styles.sectionSubText} `}>Mi trabajo</p>
-        <h2 className={`${styles.sectionHeadText}`}>Proyectos.</h2>
-      </div>
 
-      <div className="w-full flex hidden xl:block">
-        <p
-          
-          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
-        >
-          "Trabajemos juntos y creemos algo único"
-        </p>
-      </div>
-      <div className="w-full flex block xl:hidden">
-        <p
-         
-          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
-        >
+      <div className="w-full flex">
+        <p className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]">
           "Trabajemos juntos y creemos algo único"
         </p>
       </div>
 
-      <div className="mt-20 flex flex-wrap gap-7">
-        {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
+      {/* 🔥 PROYECTO DESTACADO */}
+      <div className="mt-20 w-full">
+        <ProjectCard
+          index={0}
+          {...firstProject}
+          isLarge={true}
+        />
+      </div>
+
+      {/* 📦 RESTO */}
+      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-7">
+        {otherProjects.map((project, index) => (
+          <ProjectCard
+            key={`project-${index + 1}`}
+            index={index + 1}
+            {...project}
+          />
         ))}
       </div>
     </>
   );
 };
+
 
 export default SectionWrapper(Works, "works");

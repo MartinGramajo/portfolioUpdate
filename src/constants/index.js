@@ -40,54 +40,10 @@ export const navLinks = [
 ];
 
 export const projects = [
-  {
-    name: "Feedback CEO ",
-    description:
-      "Aplicación web diseñada para recopilar retroalimentación estructurada de paciente de la clinica CEO, con un enfoque moderno y profesional. ",
-    tags: [
-      {
-        name: "React",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "css",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Typescript",
-        color: "pink-text-gradient",
-      },
-    ],
-    image:
-      "https://res.cloudinary.com/dtbfspso5/image/upload/v1763600715/feedback_bt4ojo.png",
-    source_code_link: "https://mauro-trejo.vercel.app/",
-  },
-  {
-    name: "Porfolio Dev Backend",
-    description:
-      "Landing Portfolio: Landing moderna y personalizada que destaca habilidades y proyectos de forma visual y profesional, ideal para captar atención en el ámbito freelance.",
-    tags: [
-      {
-        name: "React",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "css",
-        color: "green-text-gradient",
-      },
-      {
-        name: "javascript",
-        color: "pink-text-gradient",
-      },
-    ],
-    image:
-      "https://res.cloudinary.com/dtbfspso5/image/upload/v1740670306/portfolio%20update%20final/jmhnl3iezrubobpxms3m.png",
-    source_code_link: "https://mauro-trejo.vercel.app/",
-  },
-  {
+    {
     name: "Zoco servicio de pago",
     description:
-      "App Web: Un panel intuitivo que ofrece a clientes acceso a sus datos de facturación y permite a asesores comerciales gestionar y potenciar sus ventas.",
+  "Plataforma web desarrollada con Reactque centraliza la gestión de facturación y seguimiento comercial. Permite a clientes consultar sus datos en tiempo real y a equipos de ventas optimizar su rendimiento mediante herramientas de gestión integradas. Enfocada en escalabilidad, performance y experiencia de usuario.",
     tags: [
       {
         name: "Next.js",
@@ -108,8 +64,8 @@ export const projects = [
   },
   {
     name: "Wereal Grupo inmobiliario",
-    description:
-      "App Web:  Presenta al grupo inmobiliario Wereal en Alicante. Con interfaz intuitiva, permite explorar todas las facetas y servicios de la empresa de forma accesible y detallada.",
+  description:
+  "Sitio web corporativo para grupo inmobiliario en España, con integración a APIs y una interfaz moderna que facilita la exploración de propiedades y servicios. Optimizado para navegación fluida, claridad de contenido y captación de clientes.",
     tags: [
       {
         name: "react",
@@ -128,10 +84,11 @@ export const projects = [
       "https://res.cloudinary.com/dtbfspso5/image/upload/v1763600519/wereal_rupdqo.png",
     source_code_link: "https://wereal.es/",
   },
+
   {
     name: "DKZ Studio",
     description:
-      "App web: muestra los servicios, proyectos destacados y el equipo de DKZ Studio, es un recurso esencial para quienes buscan diseño creativo y desarrollo web de calidad.",
+  "Web corporativa para estudio creativo, enfocada en presentar servicios, portfolio y equipo de manera clara y atractiva. Desarrollo orientado a reforzar la identidad de marca y mejorar la conversión de visitantes en potenciales clientes.",
     tags: [
       {
         name: "React",
@@ -151,56 +108,53 @@ export const projects = [
     source_code_link: "https://www.dkzstudio.com/",
   },
   {
-    name: "Abancos",
-    description:
-      "App web para una empresa líder en España, enfocada en soluciones financieras para ventas, inversiones y financiamiento inmobiliario.",
+    name: "Feedback CEO ",
+description:
+  "Aplicación web orientada al sector salud para la recolección y análisis de feedback de pacientes. Diseñada con foco en usabilidad y claridad de datos, permite transformar opiniones en métricas accionables para mejorar la calidad del servicio.",
     tags: [
       {
-        name: "react",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "MongoDB",
+        name: "css",
         color: "green-text-gradient",
       },
       {
-        name: "Node.js",
+        name: "Typescript",
         color: "pink-text-gradient",
       },
     ],
     image:
-      "https://res.cloudinary.com/dtbfspso5/image/upload/v1763600444/abanco_lupkhi.png",
-    source_code_link: "https://abancos.com/",
+      "https://res.cloudinary.com/dtbfspso5/image/upload/v1763600715/feedback_bt4ojo.png",
+    source_code_link: "https://feedback-ceo.vercel.app/",
   },
-
   {
-    name: "Polo Salud",
-    description:
-      "App web: Solución para mejorar el rendimiento en el polo, con servicios especializados en el cuidado de caballos y el apoyo a jugadores y pilotos.",
+    name: "Porfolio Dev Backend",
+ description:
+  "Portfolio profesional para desarrollador backend, diseñado para comunicar habilidades técnicas y proyectos de forma clara, moderna y efectiva. Optimizado para reforzar la marca personal y aumentar oportunidades laborales mediante una presentación visual atractiva.",
     tags: [
       {
-        name: "react",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "css",
         color: "green-text-gradient",
       },
       {
-        name: "bootstrap",
+        name: "javascript",
         color: "pink-text-gradient",
       },
     ],
     image:
-      "https://res.cloudinary.com/dtbfspso5/image/upload/v1731178271/portfolio%20update%20final/Captura_de_pantalla_2024-11-09_155057_dqmk0o.png",
-    source_code_link: "https://www.polo-salud.com/es/",
+      "https://res.cloudinary.com/dtbfspso5/image/upload/v1740670306/portfolio%20update%20final/jmhnl3iezrubobpxms3m.png",
+    source_code_link: "https://mauro-trejo.vercel.app/",
   },
-
-
   {
     name: "Grillman 100% carne al fuego",
     description:
-      "App web: que utiliza OlaClick para pedidos de Grillman, optimizando la experiencia de compra de sus famosos sándwiches a la parrilla con un proceso rápido y seguro.",
+  "Landing optimizada para pedidos online integrada con OlaClick, diseñada para agilizar el proceso de compra y mejorar la experiencia del usuario. Enfocada en velocidad, simplicidad y aumento de conversiones.",
     tags: [
       {
         name: "react",
@@ -221,8 +175,8 @@ export const projects = [
   },
   {
     name: "Paztour",
-    description:
-      "Landing Page: atractiva para agencia de viajes, diseñada para inspirar a los usuarios con destinos exóticos y mostrar la efectividad de diseño en páginas turísticas.",
+   description:
+  "Landing page desarrollada para una agencia de viajes, enfocada en presentar destinos y servicios de forma clara y atractiva. Diseñada para captar la atención del usuario y facilitar la conversión mediante una navegación simple y visualmente efectiva.",
     tags: [
       {
         name: "html",
@@ -242,94 +196,10 @@ export const projects = [
     source_code_link: "https://paztouragency.es/",
   },
 
-  {
-    name: "M4Life ",
-    description:
-      "Landing Page: que destaca productos microbiológicos para potenciar el crecimiento vegetal y la biodiversidad del suelo en agricultura sostenible.",
-    tags: [
-      {
-        name: "React",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Bootstrap",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image:
-      "https://res.cloudinary.com/dtbfspso5/image/upload/v1731179451/portfolio%20update%20final/Captura_de_pantalla_2024-11-09_161038_yebpic.png",
-    source_code_link: "https://www.microbesforlife.com/",
-  },
-  {
-    name: "Rolling Gourmet",
-    description:
-      "App Web: desarrollada en Rolling Code, con autenticación y panel de administración para operaciones completas de gestión de datos",
-    tags: [
-      {
-        name: "React",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "MongoDB",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Bootstrap",
-        color: "pink-text-gradient",
-      },
-    ],
-    image:
-      "https://res.cloudinary.com/dtbfspso5/image/upload/v1731176191/portfolio%20update%20final/rc_jaxzqq.png",
-    source_code_link: "https://rolling-gourmet.netlify.app/",
-  },
-  {
-    name: "ClimApp",
-    description:
-      "App Web: que usa la API de OpenWeatherMap para ofrecer información meteorológica detallada de cualquier ciudad, con datos como temperatura y viento.",
-    tags: [
-      {
-        name: "React",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restApi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "bootstrap",
-        color: "pink-text-gradient",
-      },
-    ],
-    image:
-      "https://res.cloudinary.com/dtbfspso5/image/upload/v1731176199/portfolio%20update%20final/climapp_dc312m.png",
-    source_code_link: "https://ejercicio13.vercel.app/",
-  },
-  {
-    name: "Elden Page",
-    description:
-      "Fanpage de Elden Ring: Página dedicada al juego Elden Ring, con secciones sobre personajes, historia y jugabilidad para fans y nuevos jugadores",
-    tags: [
-      {
-        name: "Html",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Css",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Javascript",
-        color: "pink-text-gradient",
-      },
-    ],
-    image:
-      "https://res.cloudinary.com/dtbfspso5/image/upload/v1731176180/portfolio%20update%20final/elden_qayg4z.png",
-    source_code_link: "https://rc-proyecto-elden-ring.vercel.app/",
-  },
+ 
+ 
+  
+ 
 ];
 
 export const technologies = [
@@ -405,11 +275,11 @@ export const services = [
     icon: web,
   },
   {
-    title: "React & React Native Developer",
+    title: "React",
     icon: reactWeb,
   },
   {
-    title: "Next Developer",
+    title: "React Native Developer",
     icon: nextjs,
   },
   {
